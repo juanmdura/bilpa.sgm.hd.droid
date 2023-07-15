@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/odd_list_selector_holo_light"
+    android:minHeight="@dimen/home_row_size">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:paddingTop="16dp"
+
+        >
+
+        <TextView
+            android:id="@+id/vRepuestoDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.70"
+            android:fontFamily="@string/roboto_condensed"
+            android:text="@string/preview_desc"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vNroSerie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="0.3"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/preview_value"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+</RelativeLayout>

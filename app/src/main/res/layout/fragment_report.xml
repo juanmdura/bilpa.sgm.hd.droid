@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vReport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ProgressBar
+        android:id="@+id/vProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/vData"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingBottom="60dp"
+                android:paddingLeft="64dp"
+                android:paddingRight="64dp"
+                android:paddingTop="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/vLogo"
+                        android:layout_width="160dp"
+                        android:layout_height="80dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/logo_reporte_2" />
+
+                    <TextView
+                        android:id="@+id/vReportTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/vLogo"
+                        android:layout_toRightOf="@+id/vLogo"
+                        android:gravity="center"
+                        android:text="@string/preview_report_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/vReportSections"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/report_section" />
+                    <include layout="@layout/report_section" />
+
+                    <include layout="@layout/report_section" />
+
+                    <include layout="@layout/report_section" />
+
+                    <include layout="@layout/report_section" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/vBtnNext"
+                    android:layout_width="200dp"
+                    android:layout_height="68dp"
+                    android:layout_gravity="right"
+                    android:textColor="@color/b_buttonTextColor"
+                    android:background="@drawable/raised_btn"
+                    android:text="Continuar"
+                    android:layout_marginTop="32dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>
+
+
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_login"
+    android:fitsSystemWindows="true"
+    tools:context="com.bilpa.android.CorrectivoActivoActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_bilpa" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_gravity="fill_vertical"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vCardPreventivos"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="77dp"
+            card_view:cardBackgroundColor="@color/bilpa_blue"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp"
+            card_view:contentPaddingBottom="16dp"
+            card_view:contentPaddingLeft="16dp"
+            card_view:contentPaddingRight="16dp"
+            card_view:contentPaddingTop="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/vPFirstLetter"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:fontFamily="@string/roboto_thin"-->
+                        <!--android:text="P"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="100dp" />-->
+
+                    <TextView
+                        android:id="@+id/vPMoreLetters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/roboto_thin"
+                        android:text="PREVENTIVOS"
+                        android:textColor="@color/white"
+                        android:textSize="50dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vCardCorrectivos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/vCardPreventivos"
+            android:layout_alignLeft="@+id/vCardPreventivos"
+            android:layout_alignRight="@+id/vCardPreventivos"
+            android:layout_alignStart="@+id/vCardPreventivos"
+            android:layout_below="@+id/vCardPreventivos"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="52dp"
+            card_view:cardBackgroundColor="@color/bilpa_red"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="4dp"
+            card_view:contentPaddingBottom="16dp"
+            card_view:contentPaddingLeft="16dp"
+            card_view:contentPaddingRight="16dp"
+            card_view:contentPaddingTop="16dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/vCFirstLetter"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:fontFamily="@string/roboto_thin"-->
+                        <!--android:text="C"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="100dp" />-->
+
+                    <TextView
+                        android:id="@+id/vCMoreLetters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/roboto_thin"
+                        android:text="CORRECTIVOS"
+                        android:textColor="@color/white"
+                        android:textSize="50dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

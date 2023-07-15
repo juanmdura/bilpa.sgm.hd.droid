@@ -1,0 +1,292 @@
+<resources>
+
+    <!-- Color para es status bar -->
+    <color name="b_statusBarColor">#000000</color>
+
+    <!-- Color para el texto del actionbar textColorPrimary -->
+    <color name="b_actionBarTextColor">#B5242A</color>
+
+    <!-- Color para el background del actionbar -->
+    <color name="b_actionBarBackground">#003e7e</color>
+
+    <!-- Color para el fondo de la app -->
+    <color name="b_windownBackground">#FFFEFE</color>
+
+    <!-- Color para los widgets -->
+    <color name="b_widgetColorAccent">#003e7e</color>
+
+    <!-- Color para los widgets -->
+    <color name="b_widgetColorAccentHighLighted">#003164</color>
+
+    <!-- Color para el navigation bar -->
+    <color name="b_navigationBarColor">#000000</color>
+
+    <!-- Color para los textos -->
+    <color name="b_textColorPrimary">#222222</color>
+    <color name="b_textColorSecondary">#888888</color>
+
+    <!-- Color los textos de los botones -->
+    <color name="b_buttonTextColor">#ffffff</color>
+
+
+    <style name="BilpaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/bilpa_blue</item>
+        <item name="colorPrimaryDark">@color/bilpa_blue_highLighted</item>
+        <item name="colorAccent">@color/bilpa_blue</item>
+        <item name="android:windowBackground">@color/b_windownBackground</item>
+        <item name="buttonStyle">@style/RaisedBtn</item>
+    </style>
+
+    <style name="BilpaTheme.Inverse" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/bilpa_red</item>
+        <item name="colorPrimaryDark">@color/bilpa_red_highLighted</item>
+        <item name="colorAccent">@color/bilpa_red</item>
+        <item name="android:windowBackground">@color/b_windownBackground</item>
+    </style>
+
+    <style name="BilpaTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BilpaTheme.Inverse.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="BilpaTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="BilpaTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+
+    <style name="BilpaTheme.Dialog" parent="Base.Theme.AppCompat.Dialog.FixedSize">
+        <item name="windowFixedWidthMajor">400dp</item>
+        <item name="windowFixedWidthMinor">400dp</item>
+        <item name="windowFixedHeightMajor">400dp</item>
+        <item name="windowFixedHeightMinor">400dp</item>
+        <item name="colorPrimary">@color/bilpa_blue</item>
+    </style>
+
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar"></style>
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/b_widgetColorAccent</item>
+        <item name="colorButtonNormal">@color/b_widgetColorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/b_widgetColorAccent</item>
+        <item name="colorButtonNormal">@color/b_widgetColorAccent</item>
+        <item name="android:buttonStyle">@style/RaisedBtn</item>
+        <item name="android:dialogTheme">@style/AppTheme.Dialog</item>
+        <item name="android:windowBackground">@color/b_windownBackground</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.ThemeOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowBackground">@color/b_windownBackground</item>
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Base.Theme.AppCompat.Light.Dialog.FixedSize">
+        <item name="windowFixedWidthMajor">400dp</item>
+        <item name="windowFixedWidthMinor">400dp</item>
+        <item name="windowFixedHeightMajor">400dp</item>
+        <item name="windowFixedHeightMinor">400dp</item>
+    </style>
+
+    <style name="AppBarTitleSmall" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="RaisedBtn" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/b_buttonTextColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EstacionTextLbl">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="EstacionTextValue">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <style name="EstacionTitle">
+        <item name="android:textColor">@color/ab_backgroud</item>
+        <item name="android:layout_marginBottom">48dp</item>
+    </style>
+
+
+    <style name="ActivoTitle">
+        <item name="android:textColor">@color/ab_backgroud</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">24dp</item>
+    </style>
+
+    <style name="ActivoSubTitle">
+        <item name="android:textColor">@color/ab_backgroud</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingLeft">24dp</item>
+    </style>
+
+    <style name="ActivoCat">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:fontFamily">@string/roboto_condensed</item>
+        <item name="android:textColor">@color/white</item>
+        <!--<item name="android:padding">8dp</item>-->
+        <item name="android:background">@drawable/activo_tab_selector</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:minWidth">140dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="ListViewEven" parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/even_list_selector_holo_light</item>
+    </style>
+
+    <style name="ListViewEven.White" parent="android:Widget.ListView.White">
+        <item name="android:listSelector">@drawable/even_list_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerItemEven" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ListViewOdd" parent="android:Widget.ListView">
+        <item name="android:listSelector">@drawable/odd_list_selector_holo_light</item>
+    </style>
+
+    <style name="ListViewOdd.White" parent="android:Widget.ListView.White">
+        <item name="android:listSelector">@drawable/odd_list_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerItemOdd" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <style name="FragTitle">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:fontFamily">@string/roboto_light</item>
+        <item name="android:textColor">@color/ab_backgroud</item>
+    </style>
+
+    <style name="FragTitle.BlueLightBg">
+        <item name="android:background">@color/home_row_odd</item>
+    </style>
+
+    <style name="FragTitle.Medium">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="FragTitle.BlueLightBg.Medium">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="ActivoChekeoItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:background">@color/home_row_odd</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ActivoChekeoItem.Odd">
+        <item name="android:background">@color/home_row_odd</item>
+    </style>
+
+    <style name="ActivoChekeoItem.Even">
+        <item name="android:background">@color/home_row_even</item>
+    </style>
+
+    <style name="DetailSectionTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:fontFamily">@string/roboto_thin</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DetailSectionSep">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@color/b_widgetColorAccent</item>
+    </style>
+
+    <style name="DetailSectionSep.Thin">
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="LblTextViewSep" parent="DetailSectionSep.Thin">
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+
+    <style name="MangueraItem.Title">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:background">@color/bg_field</item>
+    </style>
+
+    <style name="MangueraItem.Value">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:background">@color/bg_field</item>
+    </style>
+
+
+    <style name="MangueraItem">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@color/bg_field</item>
+    </style>
+
+    <style name="MangueraItem.Left">
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="MangueraItem.Medium">
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="MangueraItem.Right">
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+
+    <style name="StatusLabel">
+        <item name="android:fontFamily">@string/roboto_condensed</item>
+        <item name="android:background">@drawable/bg_status_correctivo_finalized</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+</resources>

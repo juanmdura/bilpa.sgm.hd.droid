@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/vData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s1x"
+            android:minHeight="?android:attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vFallSump"
+                    style="@style/ActivoChekeoItem.Odd"
+                    app:radioCount="3"
+                    app:radioLbl="@string/bomba_chequeo_fugas_sump"
+                    app:radioLblMinWith="300dp"
+                    app:radioOpt0="B"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="P" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vSumpHermetico"
+                    style="@style/ActivoChekeoItem.Even"
+                    app:radioCount="3"
+                    app:radioLbl="@string/bomba_chequeo_hermetico"
+                    app:radioLblMinWith="240dp"
+                    app:radioLblMaxWith="240dp"
+                    app:radioOpt0="B"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="P" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vDetectorFuga"
+                    style="@style/ActivoChekeoItem.Odd"
+                    app:radioCount="3"
+                    app:radioLbl="@string/bomba_chequeo_detector_fuga"
+                    app:radioLblMinWith="240dp"
+                    app:radioLblMaxWith="240dp"
+                    app:radioOpt0="B"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="P" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vSifon"
+                    style="@style/ActivoChekeoItem.Even"
+                    app:radioCount="3"
+                    app:radioLbl="@string/bomba_chequeo_sifon"
+                    app:radioLblMinWith="240dp"
+                    app:radioLblMaxWith="240dp"
+                    app:radioOpt0="B"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="P" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vOtros"
+                    style="@style/ActivoChekeoItem.Odd"
+                    app:radioCount="3"
+                    app:radioLbl="@string/bomba_chequeo_otros"
+                    app:radioLblMinWith="240dp"
+                    app:radioLblMaxWith="240dp"
+                    app:radioOpt0="B"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="P" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/vProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
+

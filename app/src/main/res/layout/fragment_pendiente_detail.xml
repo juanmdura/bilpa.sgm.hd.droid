@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/two_panel_bg"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s1x"
+        android:background="@null"
+        android:minHeight="@dimen/s1x"
+        app:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.bilpa.android.widgets.LblTextView
+                android:id="@+id/vChequeo"
+                android:layout_width="520dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/bg_field"
+                app:hint="@string/pendientes_chequeo_hint"
+                app:lbl="@string/pendientes_chequeo_lbl"
+                app:lblMinWith="100dp"
+                app:orientation="0"
+                app:value="" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.bilpa.android.widgets.LblEditTextHorizontal
+                    android:id="@+id/vComentario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/vCommentVisible"
+                    android:background="@color/bg_field"
+                    app:hint="@string/pendientes_detail_lbl_enter_comment"
+                    app:lbl="@string/pendientes_detail_lbl_comment"
+                    app:lblMinWith="100dp"
+                    app:minLines="3" />
+
+                <CheckBox
+                    android:id="@+id/vCommentVisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toLeftOf="@+id/vDeleteRepuesto"
+                    android:text="@string/pendientes_detail_lbl_visible" />
+
+
+            </RelativeLayout>
+
+            <com.bilpa.android.widgets.LblTextView
+                android:id="@+id/vPlazo"
+                android:layout_width="520dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/bg_field"
+                app:hint="@string/pendientes_prompt_select_plazo"
+                app:lbl="@string/pendientes_detail_lbl_plazo"
+                app:lblMinWith="100dp"
+                app:orientation="0"
+                app:value="" />
+
+            <com.bilpa.android.widgets.LblTextView
+                android:id="@+id/vDetinoCargo"
+                android:layout_width="520dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/bg_field"
+                app:hint="@string/pendientes_detail_destino_cargo_hint"
+                app:lbl="@string/pendientes_detail_destino_cargo_lbl"
+                app:lblMinWith="100dp"
+                app:orientation="0"
+                app:value="" />
+
+            <RelativeLayout
+                android:id="@+id/vPhotoPanel"
+                android:layout_width="520dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/bg_field"
+                android:padding="8dp">
+
+
+                <TextView
+                    android:id="@+id/vLblPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@string/roboto_light"
+                    android:text="@string/pendientes_detail_lbl_enter_photo"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/vPhotoBorder"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/vLblPhoto"
+                    android:background="@drawable/photo_border_box"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/vPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@null" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/vBtnCaputrePhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/vPhotoBorder"
+                    android:background="@drawable/raised_btn"
+                    android:drawableLeft="@drawable/ic_camera_alt_white_24dp"
+                    android:drawablePadding="8dp"
+                    android:minWidth="130dp"
+                    android:text="@string/btn_camera"
+                    android:textColor="@color/b_buttonTextColor" />
+
+                <Button
+                    android:id="@+id/vBtnPickPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vBtnCaputrePhoto"
+                    android:layout_toRightOf="@+id/vPhotoBorder"
+                    android:background="@drawable/raised_btn"
+                    android:drawableLeft="@drawable/ic_perm_media_white_24dp"
+                    android:drawablePadding="8dp"
+                    android:minWidth="130dp"
+                    android:text="@string/btn_gallery"
+                    android:textColor="@color/b_buttonTextColor" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bilpa.android.HomeActivity">
+
+    <item
+        android:id="@+id/vMenuQR"
+        android:icon="@drawable/ic_qr_black_24dp"
+        android:title="@string/menu_readqr"
+        app:showAsAction="ifRoom|withText" />
+</menu>

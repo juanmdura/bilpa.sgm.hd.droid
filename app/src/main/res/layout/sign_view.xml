@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/vCommentsPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:id="@+id/vCommentLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/roboto_light"
+                    android:text="@string/visita_sign_lbl_comment"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/b_textColorPrimary"
+                    android:textStyle="italic" />
+
+
+                <com.bilpa.android.widgets.ActionEditText
+                    android:id="@+id/vComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vCommentLbl"
+                    android:ems="10"
+                    android:gravity="bottom|left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+                    android:maxLines="2"
+                    android:minLines="1"
+                    android:scrollHorizontally="false"
+                    android:hint="@string/visita_sign_lbl_enter_comment" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/vSignLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/roboto_light"
+                android:layout_marginBottom="16dp"
+                android:text="@string/sign_enter_sign"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/b_textColorPrimary"
+                android:textStyle="italic" />
+
+            <FrameLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/sign_border_box"
+                android:layout_gravity="center_horizontal">
+
+                <com.github.gcacace.signaturepad.views.SignaturePad
+                    android:id="@+id/signature_pad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:minWidth="5"
+                    app:maxWidth="6"
+                    app:penColor="@android:color/black" />
+
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

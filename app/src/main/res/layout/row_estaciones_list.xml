@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/odd_list_selector_holo_light"
+    android:minHeight="@dimen/home_row_size">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:weightSum="7">
+
+
+        <TextView
+            android:id="@+id/vEstacionName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@string/roboto_condensed"
+            android:gravity="left"
+            android:text="@string/preview_estacion_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vZone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@string/roboto_condensed"
+            android:gravity="center"
+            android:text="@string/preview_estacion_zone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/vDateLastVisit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@string/roboto_condensed"
+            android:gravity="center"
+            android:text="@string/preview_estc_last_visita"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/vDateNextVisit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@string/roboto_condensed"
+            android:gravity="center"
+            android:text="@string/preview_estc_next_visita"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/vDaysWithoutVisit"
+            android:layout_marginRight="32dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@string/roboto_condensed"
+            android:gravity="right"
+            android:drawableRight="@drawable/ic_alert"
+            android:text="@string/preview_estc_dias_sin_visita"
+            android:drawablePadding="4dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/vStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@string/roboto_condensed"
+            android:gravity="center"
+            android:text="@string/preview_estc_estado"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

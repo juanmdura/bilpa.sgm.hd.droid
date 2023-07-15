@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/vSectionRowLbl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:background="@drawable/one_pixel_border_black"
+        android:padding="4dp"
+        android:text="@string/preview_lbl"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/vSectionRowVal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:background="@drawable/one_pixel_border_black"
+        android:padding="4dp"
+        android:text="@string/preview_section_row"
+        android:visibility="visible"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</TableRow>

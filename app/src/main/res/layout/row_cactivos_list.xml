@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:minHeight="@dimen/home_row_size">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:paddingTop="16dp">
+
+
+        <TextView
+            android:id="@+id/vActivoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/vActivoType"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/vActivoType"
+            android:fontFamily="@string/roboto_light"
+            android:gravity="left"
+            android:text="@string/preview_activo_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/vActivoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/vActivoName"
+            android:layout_toLeftOf="@+id/vActivoQR"
+            android:layout_toStartOf="@+id/vActivoQR"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/preview_activo_type"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/vActionStatus"
+            style="@style/StatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/vActivoType"
+            android:text="SIN_INICIAR" />
+
+        <TextView
+            android:id="@+id/vActivoQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@+id/vIcoPendiente"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/visita_activos_code"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <ImageView
+            android:id="@+id/vIcoPendiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_assignment_black_48dp"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/vMenuReparaciones"
+        android:icon="@drawable/ic_build_black_24dp"
+        android:title="Reparaciones"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/vMenuPendientes"
+        android:icon="@drawable/ic_menu_pendientes"
+        android:title="@string/btn_pendientes"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/vMenuQR"
+        android:icon="@drawable/ic_qr_black_24dp"
+        android:title="@string/menu_asignqr"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/vMenuSave"
+        android:icon="@drawable/ic_check_black_24dp"
+        android:title="@string/menu_guardar"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

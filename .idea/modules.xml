@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mautibla-bitmaps/mautibla-bitmaps.iml" filepath="$PROJECT_DIR$/mautibla-bitmaps/mautibla-bitmaps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mautibla-md-datetimepicker/mautibla-md-datetimepicker.iml" filepath="$PROJECT_DIR$/mautibla-md-datetimepicker/mautibla-md-datetimepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mautibla-md-dialogs/mautibla-md-dialogs.iml" filepath="$PROJECT_DIR$/mautibla-md-dialogs/mautibla-md-dialogs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mautibla-signaturepad/mautibla-signaturepad.iml" filepath="$PROJECT_DIR$/mautibla-signaturepad/mautibla-signaturepad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mautibla-utils/mautibla-utils.iml" filepath="$PROJECT_DIR$/mautibla-utils/mautibla-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mautibla-volley/mautibla-volley.iml" filepath="$PROJECT_DIR$/mautibla-volley/mautibla-volley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uy_android_bilpa.iml" filepath="$PROJECT_DIR$/uy_android_bilpa.iml" />
+    </modules>
+  </component>
+</project>

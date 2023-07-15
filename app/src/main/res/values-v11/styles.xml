@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/b_textColorPrimary</item>
+
+        <item name="colorAccent">@color/b_widgetColorAccent</item>
+
+        <item name="colorButtonNormal">@color/b_widgetColorAccent</item>
+        <item name="android:buttonStyle">@style/RaisedBtn</item>
+
+        <item name="android:dialogTheme">@style/AppTheme.Dialog</item>
+
+        <item name="android:windowBackground">@color/b_windownBackground</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/list_selector</item>
+
+    </style>
+
+    <style name="RaisedBtn" parent="@android:style/Widget.Holo.Light.Button">
+        <item name="android:textColor">@color/b_buttonTextColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <!--<item name="android:fontFamily">sans-serif-medium</item>-->
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MD_Custom" parent="MD_Light">
+        <item name="android:windowMinWidthMajor">100dp</item>
+        <item name="android:windowMinWidthMinor">100dp</item>
+    </style>
+
+    <style name="MD_Custom2" parent="MD_Light">
+        <item name="android:windowMinWidthMajor">200dp</item>
+        <item name="android:windowMinWidthMinor">200dp</item>
+
+        <item name="windowFixedWidthMajor">200dp</item>
+        <item name="windowFixedWidthMinor">200dp</item>
+        <item name="windowFixedHeightMajor">200dp</item>
+        <item name="windowFixedHeightMinor">200dp</item>
+    </style>
+
+
+</resources>

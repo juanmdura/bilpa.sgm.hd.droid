@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="1dp"
+    android:layout_height="wrap_content">
+
+    <com.bilpa.android.widgets.ActionEditText
+        android:id="@+id/vEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="bottom|left"
+        android:hint="@string/visita_emails_inputs_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:minLines="1"
+        android:scrollHorizontally="false"
+        tools:showIn="@layout/emails_view"
+        android:layout_toStartOf="@+id/vBtnDelete" />
+
+    <ImageButton
+        android:id="@+id/vBtnDelete"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:background="@null"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

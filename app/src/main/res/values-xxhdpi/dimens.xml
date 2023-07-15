@@ -1,0 +1,8 @@
+<resources>
+
+
+    <dimen name="correctivos_item_w">400dp</dimen>
+    <dimen name="correctivos_item_h">150dp</dimen>
+
+
+</resources>

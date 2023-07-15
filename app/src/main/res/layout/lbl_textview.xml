@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/vLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/preview_lbl"
+            android:textAppearance="?android:attr/textAppearance"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/vValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/vLbl"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/vLbl"
+            android:layout_toRightOf="@+id/vLbl"
+            android:drawableRight="@drawable/ic_arrow_drop_down_blue_24dp"
+            android:fontFamily="@string/roboto_regular"
+            android:hint=""
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/b_textColorPrimary"
+            android:textColorHint="@color/b_widgetColorAccent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

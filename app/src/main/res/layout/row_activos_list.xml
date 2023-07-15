@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/home_row_size">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:paddingTop="16dp">
+
+
+        <TextView
+            android:id="@+id/vActivoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@string/roboto_light"
+            android:gravity="left"
+            android:text="@string/preview_activo_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/vActivoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/vActivoName"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/preview_activo_type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_toLeftOf="@+id/vActivoQR"
+            android:layout_toStartOf="@+id/vActivoQR" />
+
+        <TextView
+            android:id="@+id/vActionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/vActivoType"
+            android:fontFamily="@string/roboto_light"
+            android:text="SIN_INICIAR"
+            android:textStyle="bold|italic"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/vActivoQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/vActivoType"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/visita_activos_code"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

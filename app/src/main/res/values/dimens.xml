@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--home-->
+    <dimen name="home_row_size">64dp</dimen>
+
+
+    <dimen name="s1x">56dp</dimen>
+    <dimen name="s2x">112dp</dimen>
+    <dimen name="s3x">168dp</dimen>
+    <dimen name="s3x05">196dp</dimen>
+    <dimen name="s4x">224dp</dimen>
+    <dimen name="s8x">448dp</dimen>
+
+    <dimen name="dialogs_default_width">800dp</dimen>
+    <dimen name="dialogs_default_height">600dp</dimen>
+
+    <dimen name="dialogs_medium_width">500dp</dimen>
+    <dimen name="dialogs_medium_height">600dp</dimen>
+    <dimen name="dialogs_medium_minheight">300dp</dimen>
+
+    <dimen name="dialogs_small_width">300dp</dimen>
+    <dimen name="dialogs_small_height">400dp</dimen>
+
+    <dimen name="dialogs_emails_width">600dp</dimen>
+    <dimen name="dialogs_emails_height">600dp</dimen>
+
+    <dimen name="dialogs_list_divider_height">1dp</dimen>
+
+
+    <dimen name="row_picos_height">48dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="app_bar_height_extended">560dp</dimen>
+    <dimen name="fab_margin">8dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="correctivos_item_w">400dp</dimen>
+    <dimen name="correctivos_item_h">150dp</dimen>
+
+    <dimen name="activo_check_text_width">240dp</dimen>
+
+
+</resources>

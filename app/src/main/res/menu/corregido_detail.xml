@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bilpa.android.HomeActivity">
+
+    <item
+        android:id="@+id/vCancel"
+        android:title="@string/menu_cancelar"
+        android:icon="@drawable/ic_close_black_24dp"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/vSave"
+        android:icon="@drawable/ic_check_black_24dp"
+        android:title="@string/menu_guardar"
+        app:showAsAction="ifRoom|withText" />
+
+
+</menu>

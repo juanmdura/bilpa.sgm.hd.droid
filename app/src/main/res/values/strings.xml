@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">SGM</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+
+    <string name="service_error_unknown">Ups, ocurrio un error inesperado. Estamos en busca de una rápida solución</string>
+    <string name="service_error_services_unavailable">Ups, el sistema no esta operativo en este momento. Estamos en busca de una rápida solución.</string>
+    <string name="service_error_services_timeout">Ups, esto esta demorando mas de lo esperado. Prueba nuevamente luego.</string>
+    <string name="service_error_no_connection">Ups, no pudimos conectarnos con internet. Chequea que tienes una conexión activa y vuelve a intentarlo.</string>
+    <string name="service_error_network_unavailable">Ups, no pudimos conectarnos con internet. Checkea que tienes una conexión activa y vuelve a intentarlo.</string>
+
+
+    <string name="menu_cancelar">Cancelar</string>
+    <string name="menu_guardar">Guardar</string>
+    <string name="menu_asignqr">Asignar QR</string>
+    <string name="menu_readqr">Leer QR</string>
+    <string name="menu_search">Buscar</string>
+    <string name="menu_iniciar_visita">Iniciar Visita</string>
+    <string name="menu_report_gen">Generar Reporte</string>
+    <string name="menu_visita_finalizar">Finalizar Visita</string>
+    <string name="menu_show_pdf">Ver PDF</string>
+    <string name="menu_send_email">Enviar correo</string>
+    <string name="menu_update">Actualizar</string>
+    <string name="menu_exit">Salir</string>
+
+
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_login">INGRESAR</string>
+    <string name="btn_stop">PARAR</string>
+    <string name="btn_init">INICIAR</string>
+    <string name="btn_camera">Camara</string>
+    <string name="btn_gallery">Galería</string>
+    <string name="btn_continue">Continuar</string>
+    <string name="btn_try_again">Probar de nuevo</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_read_qr">Leer QR</string>
+    <string name="btn_comentarios">Comentarios</string>
+    <string name="btn_corregidos">Reparaciones</string>
+    <string name="btn_pendientes">Pendientes</string>
+    <string name="btn_corregir_activo">Corregir Activo</string>
+
+
+    <string name="radio_opt_si">Si</string>
+    <string name="radio_opt_no">No</string>
+    <string name="radio_opt_na">N/A</string>
+    <string name="radio_opt_b">B</string>
+    <string name="radio_opt_c">R</string>
+    <string name="radio_opt_p">P</string>
+
+    <string name="app_count_cantidad">Cantidad  %2d</string>
+
+    <!-- login -->
+    <string name="login_prompt_usuario">Usuario</string>
+    <string name="login_prompt_password">Contraseña</string>
+    <string name="login_error_invalid_email">El usuario es inválido.</string>
+    <string name="login_error_incorrect_password">La contraseña es inválida.</string>
+    <string name="login_error_empty_user">Ingresa el usuario.</string>
+    <string name="login_error_empty_pass">Ingresa la contraseña.</string>
+
+
+    <string-array name="array_roles">
+        <item>No definido</item>
+        <item>Admnistrador</item>
+        <item>Administrativo</item>
+        <item>Técnico</item>
+        <item>Contacto Empresa</item>
+        <item>Encargado de Mantenimiento</item>
+    </string-array>
+
+
+    <!-- Home -->
+    <string name="preventivos_ab_title">Preventivos</string>
+
+    <string name="home_msg_visitas_asignadas_empty">Actualmente no tienes visitas asignadas.</string>
+    <string name="home_estacion_header_estacion">Estación</string>
+    <string name="home_estacion_header_zona">Zona</string>
+    <string name="home_estacion_header_last_visita">Última visita</string>
+    <string name="home_estacion_header_next_visita">Próxima visita</string>
+    <string name="home_estacion_header_dias_sin_visita">Días sin visita</string>
+    <string name="home_estacion_header_estado">Estado</string>
+
+    <!-- Visita -->
+    <string name="visita_estacion_planificada">Planificada: %1$s</string>
+    <string name="visita_lbl_init">Inicio Visita</string>
+    <string name="visita_lbl_end">Fin de Visita</string>
+    <string name="visita_lbl_sign">Firma por E.S.</string>
+    <string name="visita_activos_select_activo">Asociar QR al activo</string>
+    <string name="visita_activos_title">Activos</string>
+    <string name="visita_activos_code">Código QR: %1$s</string>
+    <string name="visita_activos_code_empty">Sin código QR</string>
+    <string name="visita_exit_unsaved_msg">Desea salir sin guardar los datos del chequeo?</string>
+    <string name="visita_date_seleccionar_init">Seleccionar fecha …</string>
+    <string name="visita_date_seleccionar_end">Seleccionar fecha …</string>
+    <string name="visita_sign_lbl_comment">Comentario del Operador</string>
+    <string name="visita_sign_lbl_enter_comment">Ingrese un comentario</string>
+    <string name="visita_msg_qr_must_int">EL código deber ser un número. \nCódigo leido: %1$s</string>
+    <string name="visita_msg_readed_code">Código leido: %1$s</string>
+    <string name="visita_msg_must_init">Para modificar un activo debes iniciar la visita.</string>
+    <string name="visita_msg_status_finish">La visita se encuentra finalizada.</string>
+    <string name="visita_msg_saved">La visita fue guardada correctamente.</string>
+    <string name="visita_msg_finished">La visita fue finalizada correctamente.</string>
+    <string name="visita_msg_fin_must_after_init">La fecha de fin debe ser posterior a la fecha de inicio.</string>
+    <string name="visita_msg_finalizar_select_end_data">Debes seleccionar una fecha de fin para finalizar la visita.</string>
+    <string name="visita_msg_finalizar_confirmacion">Estas seguro que deseas finalizar la visita?</string>
+    <string name="visita_msg_visita_finalizada">Visita finalizada</string>
+    <string name="visita_msg_activo_no_encontrado">Activo no encontrado.</string>
+    <string name="visita_activo_status_completo">COMPLETO</string>
+    <string name="visita_activo_status_iniciado">INICIADO</string>
+    <string name="visita_activo_status_sininciar">SIN INICIAR</string>
+
+    <string name="visita_emails_title">Seguro que desea cerrar la visita?</string>
+    <string name="visita_emails_subtitle">Se notificará a las siguientes direcciones.</string>
+    <string name="visita_emails_inputs_hint">ejemplo@mail.com</string>
+    <string name="visita_emails_invalid_mail">Email inválido</string>
+
+
+    <!-- Activos Gral  -->
+    <string name="activo_tab_chequeo">CHEQUEO</string>
+
+
+    <!-- Chequeo Surtidor  -->
+    <string name="surtidor_chequeo_exit_unsaved_msg">Desea salir sin guardar los datos del chequeo?</string>
+    <string name="surtidor_chequeo_saved_successful">Surtidor guardado correctamente.</string>
+    <string name="surtidor_chequeo_btn_mangueras">Mangueras</string>
+    <string name="surtidor_chequeo_btn_productos">Productos</string>
+    <string name="surtidor_chequeo_plan_sellado">Plan Sellado</string>
+    <string name="surtidor_chequeo_other">Otros</string>
+
+
+    <!-- Chequeo tanque  -->
+    <string name="tanque_chequeo_color_marco_tapa_descarga">Color de marco y tapa en descarga</string>
+    <string name="tanque_chequeo_agua_tanque">Agua en el tanque</string>
+    <string name="tanque_chequeo_ventilacion">Ventilación</string>
+    <string name="tanque_chequeo_lomo_descargas_telemedicion">Tapas sobre lomo de tanque, descargas, telemedición</string>
+    <string name="tanque_chequeo_tipo_descarga">Tipo de descarga</string>
+    <string name="tanque_chequeo_medida_agua">Medida del agua (cm)</string>
+    <string name="tanque_chequeo_exit_unsaved_msg">Desea salir sin guardar los datos del chequeo?</string>
+    <string name="tanque_chequeo_saved_successful">Tanque guardado correctamente.</string>
+
+
+    <!-- Chequeo bomba  -->
+    <string name="bomba_chequeo_fugas_sump">Fugas dentro del sump</string>
+    <string name="bomba_chequeo_hermetico">Sump hermético</string>
+    <string name="bomba_chequeo_detector_fuga">Detector mecánico de fuga</string>
+    <string name="bomba_chequeo_sifon">Sifón</string>
+    <string name="bomba_chequeo_otros">Otros</string>
+    <string name="bomba_chequeo_exit_unsaved_msg">Desea salir sin guardar los datos del chequeo?</string>
+    <string name="bomba_chequeo_saved_successful">Bomba guardada correctamente.</string>
+
+    <!-- Chequeo generico  -->
+    <string name="generico_chequeo_saved_successful">Activo guardado correctamente.</string>
+
+    <string name="mangueras_ab_title">Mangueras</string>
+    <string name="mangueras_list_empty">Ninguna manguera del surtidor tiene un producto asignado.</string>
+    <string name="mangueras_subtitle_caudal">CAUDAL</string>
+    <string name="mangueras_subtitle_calibre_precinto">CALIBRE Y PRECINTO</string>
+    <string name="mangueras_field_totalizador_mecanico_inicial">Totalizador mecánico incial (l)</string>
+    <string name="mangueras_field_totalizador_mecanico_final">Totalizador mecánico final (l)</string>
+    <string name="mangueras_field_totalizador_electro_inicial">Totalizador electrónico inicial (l)</string>
+    <string name="mangueras_field_totalizador_electro_final">Totalizador electrónico final (l)</string>
+    <string name="mangueras_field_volumen_retirado">Volumen retirado (l) :</string>
+    <string name="mangueras_field_volumen">Volumen (l)</string>
+    <string name="mangueras_field_tiempo">Tiempo (s)</string>
+    <string name="mangueras_field_volumen_retirado2">Litros / Minuto</string>
+    <string name="mangueras_field_calibre1">Calibre 1</string>
+    <string name="mangueras_field_calibre2">Calibre 2</string>
+    <string name="mangueras_field_calibre3">Calibre 3</string>
+    <string name="mangueras_field_calibre4">Calibre 4</string>
+    <string name="mangueras_field_calibre5">Calibre 5</string>
+    <string name="mangueras_field_calibre6">Calibre 6</string>
+    <string name="mangueras_field_calibre_alto">Calibre Alto:</string>
+    <string name="mangueras_field_calibre_bajo">Calibre Bajo:</string>
+    <string name="mangueras_field_precinto_remplazo">Precinto: Reemplazado</string>
+    <string name="mangueras_field_precinto_numero_old">Número viejo</string>
+    <string name="mangueras_field_precinto_numero">Número</string>
+    <string name="mangueras_field_pico_forro_mang">Pico/Forro/Manguera</string>
+    <string name="mangueras_field_identificacion_producto">Identificacíon del Producto</string>
+    <string name="mangueras_field_predeterminacion">Predeterminación</string>
+    <string name="mangueras_field_sistema_bloqueo">Sistema bloqueo</string>
+    <string name="mangueras_field_fugas">Fugas</string>
+    <string name="mangueras_field_otros">Otros</string>
+    <string name="mangueras_msg_qr_must_int">EL código qr deber ser un número. \nCódigo leido: %1$s</string>
+    <string name="mangueras_msg_readed_code">Código leido: %1$s</string>
+    <string name="mangueras_msg_pico_no_encontrado">No existe una manguera asociada al código QR leído.</string>
+    <string name="mangueras_subtitle_more">CHEQUEO</string>
+    <string name="mangueras_list_tipo_combustible">Tipo de Combustible</string>
+    <string name="mangueras_list_lbl_number">Número:</string>
+    <string name="mangueras_chequeo_exit_unsaved_msg">Desea salir sin guardar los datos del pico %1$s (%2$d)?</string>
+    <string name="mangueras_chequeo_msg_precinto_calibres">Debes completar los datos del calibre 4, 5 y 6.</string>
+    <string name="mangueras_chequeo_saved_successful">Pico guardado correctamente.</string>
+    <string name="mangueras_qr_assigned">Código %1$s asignado al pico.</string>
+    <string name="mangueras_msg_caudal_between">Debes ingresar un numero entre %1$f y %2$f</string>
+
+
+    <string name="productos_ab_title">Productos</string>
+    <string name="productos_chequeo_exit_unsaved_msg">Desea salir sin guardar los datos del producto?</string>
+    <string name="productos_chequeo_saved_successful">Producto guardado correctamente.</string>
+
+
+    <!-- Home  -->
+    <string name="home_search_empty">Actualmente no tienes estaciones asignadas.</string>
+    <string name="home_search_empty_filter">No existen estaciones asignadas con la búsqueda ingresada.</string>
+
+
+    <!-- Corregidos  -->
+    <string name="corregidos_list_title">Reparaciones</string>
+    <string name="corregidos_list_empty">Agrega una reparación presionando el bóton de +.\n</string>
+    <string name="corregidos_list_delete_alert">¿Deseas borrar la reparación: \'%1$s\'?</string>
+    <string name="corregidos_list_repuestos_lbl">Repuestos:</string>
+    <string name="corregidos_detail_title_new">Nueva Reparación</string>
+    <string name="corregidos_detail_title_edit">Editar Reparación</string>
+    <string name="corregidos_detail_falla_hint">Selecciona una falla</string>
+    <string name="corregidos_detail_tarea_hint">Selecciona una tarea</string>
+    <string name="corregidos_detail_repuesto_hint">Selecciona un repuesto</string>
+    <string name="corregidos_detail_lbl_falla">Falla</string>
+    <string name="corregidos_detail_lbl_tarea">Tarea</string>
+    <string name="corregidos_detail_lbl_comment">Comentario</string>
+    <string name="corregidos_detail_lbl_enter_comment">Ingrese su comentario</string>
+    <string name="corregidos_detail_lbl_comment_visible">Visible</string>
+    <string name="corregidos_detail_destino_cargo_lbl">Destino del cargo</string>
+    <string name="corregidos_detail_destino_cargo_hint">Selecciona un destino del cargo …</string>
+    <string name="corregidos_detail_manguera_lbl">Manguera</string>
+    <string name="corregidos_detail_manguera_hint">Selecciona una manguera …</string>
+    <string name="corregidos_detail_manguera_lbl_type">Tipo de Combustible</string>
+    <string name="corregidos_detail_mangueras_empty">No hay picos disponibles para el surtidor</string>
+    <string name="corregidos_detail_lbl_enter_photo_before">Foto antes de corregir</string>
+    <string name="corregidos_detail_lbl_enter_photo_after">Foto después de corregir</string>
+    <string name="corregidos_detail_repuestos_title">REPUESTOS</string>
+    <string name="corregidos_detail_repuestos_empty_msg">No hay repuestos ingresados.</string>
+    <string name="corregidos_detail_repuestos_lbl_new">Nuevo</string>
+    <string name="corregidos_msg_preventivo_not_found">No fue encontrado el preventivo del activo.</string>
+    <string name="corregidos_msg_falla_select">Selecciona una falla.</string>
+    <string name="corregidos_msg_tarea_select">Selecciona una tarea.</string>
+    <string name="corregidos_msg_destinocargo_select">Selecciona el destino del cargo.</string>
+    <string name="corregidos_msg_exit_unsaved">Desea salir sin guardar los datos de la reparación?</string>
+    <string name="corregidos_msg_empty_repuestos">No se han agregado repuestos a la reparación.</string>
+
+
+    <!-- Fallas  -->
+    <string name="fallas_search_list_header_desc">Descripción</string>
+    <string name="fallas_search_title">Búsqueda de Fallas</string>
+    <string name="fallas_search_filter_all">TODOS</string>
+    <string name="fallas_search_empty">Actualmente el sistema no tiene fallas ingresados.</string>
+    <string name="fallas_search_empty_filter">No hay fallas disponibles con los filtros ingresados.</string>
+
+    <!-- Tareas  -->
+    <string name="tareas_search_list_header_desc">Descripción</string>
+    <string name="tareas_search_title">Búsqueda de Tareas</string>
+    <string name="tareas_search_filter_all">TODOS</string>
+    <string name="tareas_search_empty">Actualmente el sistema no tiene tareas ingresados.</string>
+    <string name="tareas_search_empty_filter">No hay tareas disponibles con los filtros ingresados.</string>
+
+    <!-- Repuestos  -->
+    <string name="repuestos_search_list_header_desc">Descripción</string>
+    <string name="repuestos_search_list_header_numserier">N° Serie</string>
+    <string name="repuestos_search_title">Búsqueda de Repuestos</string>
+    <string name="repuestos_search_filter_all">TODOS</string>
+    <string name="repuestos_search_empty">Actualmente el sistema no tiene repuestos ingresados.</string>
+    <string name="repuestos_search_empty_filter">No hay repuestos disponibles con los filtros ingresados.</string>
+
+    <!-- Destino del cargo  -->
+    <string name="destino_search_cargo_title">Destino del cargo</string>
+
+    <!-- Organizaciones  -->
+    <string name="oraganizaciones_search_cargo_title">Destinatario</string>
+
+    <!-- Chequeos dialog  -->
+    <string name="chequeos_select_title">Selecciona el chequeo</string>
+
+    <!-- Pendientes  -->
+    <string name="pendientes_list_title">Pendientes</string>
+    <string name="pendientes_list_empty">Agrega un pendiente presionando el bóton de +.\n</string>
+    <string name="pendientes_list_delete_alert">¿Deseas borrar el pendiente: \'%1$s\'?</string>
+    <string name="pendientes_prompt_select_plazo">Seleccione una fecha</string>
+    <string name="pendientes_msg_empty_comment">Ingresa un comentario.</string>
+    <string name="pendientes_msg_empty_organizacion">Selecciona un destinatario.</string>
+    <string name="pendientes_detail_title_new">Nuevo Pendiente</string>
+    <string name="pendientes_detail_title_edit">Editar Pendiente</string>
+    <string name="pendientes_detail_msg_exit_unsaved">Desea salir sin guardar los datos del pendiente?</string>
+    <string name="pendientes_plazo_lbl">Plazo: %s</string>
+    <string name="pendientes_reparado_lbl">Reparado: %s</string>
+    <string name="pendientes_reparado_empty">No especificado</string>
+    <string name="pendientes_detail_lbl_comment">Comentario</string>
+    <string name="pendientes_detail_lbl_enter_comment">Ingrese su comentario</string>
+    <string name="pendientes_detail_lbl_visible">Visible</string>
+    <string name="pendientes_detail_lbl_plazo">Plazo:</string>
+    <string name="pendientes_detail_destino_cargo_lbl">Destinatario</string>
+    <string name="pendientes_detail_destino_cargo_hint">Selecciona un destinatario …</string>
+    <string name="pendientes_detail_lbl_enter_photo">Seleccione una foto</string>
+    <string name="pendientes_chequeo_lbl">Chequeo</string>
+    <string name="pendientes_chequeo_hint">Selecciona un chequeo</string>
+    <string name="pendientes_chequeo_msg_empty_comment">Ingresa un chequeo.</string>
+    <string name="pendientes_menu_action_delete">Eliminar</string>
+    <string name="pendientes_menu_action_discard">Descartar</string>
+    <string name="pendientes_discard_comment_dialog_title">Descartar Pendiente</string>
+    <string name="pendientes_discard_comment_dialog_hint">Ingrese el motivo de descarte</string>
+    <string name="pendientes_discard_comment_dialog_msg_empty_comment">Debes ingresar un motivo de descarte.</string>
+
+    <!-- Comments -->
+    <string name="comments_list_title">Comentarios</string>
+    <string name="comments_list_empty">Agrega un comentario presionando el bóton de +.\n</string>
+    <string name="comments_new_title">Ingresa tu comentario</string>
+    <string name="comments_msg_empty_comment">Por favor, ingresa un comentario.</string>
+    <string name="comments_msg_success">Comentario agregado correctamente.</string>
+    <string name="comments_msg_updated">Comentario actualizado correctamente</string>
+    <string name="comments_msg_delete_comment">¿Deseas borrar el comentario?</string>
+    <string name="comments_lbl_imprimible">Imprimible</string>
+
+    <!-- QRCode -->
+    <string name="qr_reader_title">Leer código QR</string>
+    <string name="qr_reader_title_active_reportado">Leer código QR para corregir el activo reportado</string>
+    <string name="qr_assigned_to_activo">Código asignado al activo %1$s</string>
+
+    <!-- Report -->
+    <string name="report_ab_title">Reporte</string>
+    <string name="report_email_body">Reporte enviado desde estación %1$s, al finalizar el mantenimiento preventivo.</string>
+    <string name="report_show_not_view_app">Debes tener instalado un visualizar de pdf para ver el reporte.</string>
+    <string name="report_sign_lbl_comment">Comentario del Operador</string>
+    <string name="report_sign_lbl_sign">Firma del Operador</string>
+    <string name="report_sign_comment_empty">Sin comentarios</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string name="lourem">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.
+Ius id vidit volumus mandamus, vide veritus democritum te nec, ei eos debet libris consulatu. No mei ferri graeco dicunt, ad cum veri accommodare. Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque. Eos vocibus deserunt quaestio ei.
+Blandit incorrupte quaerendum in quo, nibh impedit id vis, vel no nullam semper audiam. Ei populo graeci consulatu mei, has ea stet modus phaedrum. Inani oblique ne has, duo et veritus detraxit. Tota ludus oratio ea mel, offendit persequeris ei vim. Eos dicat oratio partem ut, id cum ignota senserit intellegat. Sit inani ubique graecis ad, quando graecis liberavisse et cum, dicit option eruditi at duo. Homero salutatus suscipiantur eum id, tamquam voluptaria expetendis ad sed, nobis feugiat similique usu ex.
+Eum hinc argumentum te, no sit percipit adversarium, ne qui feugiat persecuti. Odio omnes scripserit ad est, ut vidit lorem maiestatis his, putent mandamus gloriatur ne pro. Oratio iriure rationibus ne his, ad est corrumpit splendide. Ad duo appareat moderatius, ei falli tollit denique eos. Dicant evertitur mei in, ne his deserunt perpetua sententiae, ea sea omnes similique vituperatoribus. Ex mel errem intellegebat comprehensam, vel ad tantas antiopam delicatissimi, tota ferri affert eu nec. Legere expetenda pertinacia ne pro, et pro impetus persius assueverit.
+Ea mei nullam facete, omnis oratio offendit ius cu. Doming takimata repudiandae usu an, mei dicant takimata id, pri eleifend inimicus euripidis at. His vero singulis ea, quem euripidis abhorreant mei ut, et populo iriure vix. Usu ludus affert voluptaria ei, vix ea error definitiones, movet fastidii signiferumque in qui.
+Vis prodesset adolescens adipiscing te, usu mazim perfecto recteque at, assum putant erroribus mea in. Vel facete imperdiet id, cum an libris luptatum perfecto, vel fabellas inciderint ut. Veri facete debitis ea vis, ut eos oratio erroribus. Sint facete perfecto no vel, vim id omnium insolens. Vel dolores perfecto pertinacia ut, te mel meis ullum dicam, eos assum facilis corpora in.
+Mea te unum viderer dolores, nostrum detracto nec in, vis no partem definiebas constituam. Dicant utinam philosophia has cu, hendrerit prodesset at nam, eos an bonorum dissentiet. Has ad placerat intellegam consectetuer, no adipisci mandamus senserit pro, torquatos similique percipitur est ex. Pro ex putant deleniti repudiare, vel an aperiam sensibus suavitate. Ad vel epicurei convenire, ea soluta aliquid deserunt ius, pri in errem putant feugiat.
+Sed iusto nihil populo an, ex pro novum homero cotidieque. Te utamur civibus eleifend qui, nam ei brute doming concludaturque, modo aliquam facilisi nec no. Vidisse maiestatis constituam eu his, esse pertinacia intellegam ius cu. Eos ei odio veniam, eu sumo altera adipisci eam, mea audiam prodesset persequeris ea. Ad vitae dictas vituperata sed, eum posse labore postulant id. Te eligendi principes dignissim sit, te vel dicant officiis repudiandae.
+Id vel sensibus honestatis omittantur, vel cu nobis commune patrioque. In accusata definiebas qui, id tale malorum dolorem sed, solum clita phaedrum ne his. Eos mutat ullum forensibus ex, wisi perfecto urbanitas cu eam, no vis dicunt impetus. Assum novum in pri, vix an suavitate moderatius, id has reformidans referrentur. Elit inciderint omittantur duo ut, dicit democritum signiferumque eu est, ad suscipit delectus mandamus duo. An harum equidem maiestatis nec.
+At has veri feugait placerat, in semper offendit praesent his. Omnium impetus facilis sed at, ex viris tincidunt ius. Unum eirmod dignissim id quo. Sit te atomorum quaerendum neglegentur, his primis tamquam et. Eu quo quot veri alienum, ea eos nullam luptatum accusamus. Ea mel causae phaedrum reprimique, at vidisse dolores ocurreret nam.</string>
+
+
+    <string name="preview_lbl">Lbl</string>
+    <string name="preview_hint">hint</string>
+    <string name="preview_filter">Filter</string>
+    <string name="preview_section_title">Section Title</string>
+    <string name="preview_opt0">opt0</string>
+    <string name="preview_opt1">opt1</string>
+    <string name="preview_opt2">opt2</string>
+    <string name="preview_opt3">opt3</string>
+    <string name="preview_tab">TAB</string>
+    <string name="preview_index">12</string>
+    <string name="preview_section_row">Row Value</string>
+    <string name="preview_activo_name">Activo Names</string>
+    <string name="preview_activo_type">Surtidor</string>
+    <string name="preview_producto_name">Producto Nombre</string>
+    <string name="preview_value">Value</string>
+    <string name="preview_desc">Desc</string>
+    <string name="preview_corregidos_list_title">Borrado: No borra caja registrados</string>
+    <string name="preview_corregidos_list_desc">Calibracion de Sonda de Telemedición</string>
+    <string name="preview_corregidos_list_repuestos">la\nlas\nallas</string>
+    <string name="preview_pendientes_list_title">Borrado: No borra caja registrados texto mas largo de una linea deberia verse abajo</string>
+    <string name="preview_comentarios_list_item">Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.
+    Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per.</string>
+    <string name="preview_picos_type">Super 95</string>
+    <string name="preview_estacion_name">Estacion Name</string>
+    <string name="preview_estacion_zone">Zona 3</string>
+    <string name="preview_estc_last_visita">Ultima visita: dd/MM/YY</string>
+    <string name="preview_estc_next_visita">Proxima Visita: dd/MM/YY</string>
+    <string name="preview_estc_dias_sin_visita">Dias sin visitar: 4</string>
+    <string name="preview_estc_estado">PENDIENTE</string>
+    <string name="preview_visita_name">Estacion Name</string>
+    <string name="preview_ab_title">Nombre de Activo</string>
+    <string name="preview_pico_type">Super 95</string>
+    <string name="preview_report_title">Report Title</string>
+    <string name="preview_manguera_ab_subtitle">Surtidor Nafta 95</string>
+    <string name="preview_user_rol">Rol</string>
+    <string name="preview_user_name">Name LastName</string>
+    <string name="preview_visita_planificacion">Planificada: Octubre 2015</string>
+    <string name="preview_date">25/10/2014</string>
+    <string name="preview_tanque_medida_agua">10000</string>
+    <string name="preview_mangueras_detail_title">Nombre de Activo (18)</string>
+    <string name="preview_mangueras_num">19</string>
+    <string name="sign_enter_sign">Ingrese su firma</string>
+    <string name="title_activity_correctivos">CorrectivosActivity</string>
+    <string name="preview_chequeo_name">Visual y Limpieza</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--
+
+                    ++++++          CORRECTIVOS          ++++++
+
+    -->
+
+    <string name="correctivos_ab_title">Correctivos</string>
+    <string name="correctivos_items_empty">Actualmente no tienes correctivos asignados.</string>
+    <string name="correctivos_items_empty_filter">No existen correctivos asignadas con la búsqueda ingresada.</string>
+    <string name="correctivos_list_zone">%1$s</string>
+    <string name="correctivos_list_plazo">Plazo: %1$s</string>
+    <string name="correctivos_list_init">Reportado: %1$s</string>
+    <string name="correctivos_list_end">Cumplimiento: %1$s</string>
+    <string name="correctivo_detail_service_init_lbl">Inicio del servicio</string>
+    <string name="correctivo_detail_service_end_lbl">Fin del servicio</string>
+    <string name="correctivo_detail_menu_iniciar"> Iniciar Servicio</string>
+    <string name="correctivo_detail_menu_finalizar">Finalizar Servicio</string>
+    <string name="correctivo_detail_msg_service_is_pending">El service esta pendiente</string>
+    <string name="correctivo_detail_msg_service_is_inprocess">El servicio esta en proceso</string>
+    <string name="correctivo_detail_msg_service_is_finished">El servicio esta finalizado</string>
+    <string name="correctivo_detail_msg_service_pending_to_read_qr">Debes iniciar el service para leer los códigos QR.</string>
+    <string name="correctivo_detail_msg_service_finalized_to_read_qr">El servicio esta finalizado para leer códigos QR.</string>
+    <string name="correctivo_detail_msg_activo_access_pending">Debes iniciar el service para acceder al activo</string>
+    <string name="correctivo_detail_msg_activo_access_finalized">El service fue finalizado y no puedes acceder al activo</string>
+    <string name="correctivo_detail_lbl_fallas_cliente">Fallas reportadas por el cliente</string>
+    <string name="correctivo_detail_sello_nro">%1$s Nro %2$s</string>
+    <string name="correctivo_detail_ducsa_nro">Numero Ducsa: %1$s</string>
+    <string name="correctivo_detail_btn_iniciar_service">Iniciar Service</string>
+    <string name="correctivo_detail_lbl_falla_reportada">Falla Reportada</string>
+    <string name="correctivo_detail_lbl_comentario">Comentario</string>
+    <string name="correctivo_detail_msg_sin_falla_reportada">No detalla falla</string>
+    <string name="correctivo_detail_msg_comentario">Sin comentarios</string>
+    <string name="correctivo_detail_status_reparado">REPARADO</string>
+    <string name="correctivo_detail_msg_qr_no_asociado">No encontramos un activo asociado al código QR.</string>
+    <string name="correctivo_detail_msg_enter_init_end_dates">Para finalizar el correctivo, debe ingresar fechas de inicio y fin.</string>
+
+
+
+    <string name="correctivo_actvio_tab_soluciones">REPARACIONES</string>
+    <string name="correctivo_activo_tab_pendientes">PENDIENTES</string>
+
+    <string name="title_activity_correctivo_activo">CorrectivoActivoActivity</string>
+
+    <string name="correctivo_reparaciones_msg_empty_totalizador_inicial">Ingresa el totalizador inicial</string>
+    <string name="correctivo_reparaciones_msg_empty_totalizador_final">Ingresa el totalizador final</string>
+    <string name="correctivo_pendientes_pendiente_reparado_title">Pendiente Reparado</string>
+    <string name="correctivo_pendientes_pendiente_reparado_msg">Pendiente: %1$s\nReparado: %2$s\nDestinatario: %3$s</string>
+    <string name="corregidos_calibres_invalid_input">Debes ingresar un valor entre 9.80 y 10.20</string>
+
+    <string name="solucion_detail_validating_msg_calibre">El calibre %1$d debe ser un valor entre 9.80 y 10.20</string>
+
+</resources>

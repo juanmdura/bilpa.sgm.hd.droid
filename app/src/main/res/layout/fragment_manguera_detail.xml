@@ -1,0 +1,491 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/two_panel_bg">
+
+    <LinearLayout
+        android:id="@+id/vData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s1x"
+            android:background="@null"
+            android:minHeight="@dimen/s1x"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/vTool1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s1x"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/vIndex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@string/roboto_thin"
+                        android:text="@string/preview_index"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/b_textColorPrimary"
+                        android:textSize="32dp" />
+
+                    <TextView
+                        android:id="@+id/vToolbarTitle"
+                        style="@style/FragTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:text="@string/preview_mangueras_detail_title"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textColor="@color/b_textColorPrimary" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator"></View>
+
+        <ScrollView
+            android:id="@+id/vScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="false"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/vLblChequep"
+                    style="@style/DetailSectionTitle"
+                    android:text="@string/mangueras_subtitle_more" />
+
+                <View style="@style/DetailSectionSep" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vPicoForroManguera"
+                    style="@style/MangueraItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:radioCount="3"
+                    app:radioLbl="@string/mangueras_field_pico_forro_mang"
+                    app:radioLblMinWith="160dp"
+                    app:radioLblMaxWith="160dp"
+                    app:radioOpt0="@string/radio_opt_b"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="@string/radio_opt_p"
+                    android:orientation="vertical" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vIdentificacionProducto"
+                    style="@style/MangueraItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:radioCount="3"
+                    app:radioLbl="@string/mangueras_field_identificacion_producto"
+                    app:radioLblMinWith="160dp"
+                    app:radioLblMaxWith="160dp"
+                    app:radioOpt0="@string/radio_opt_b"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="@string/radio_opt_p" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vPredeterminacion"
+                    style="@style/MangueraItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:radioCount="4"
+                    app:radioLbl="@string/mangueras_field_predeterminacion"
+                    app:radioLblMinWith="160dp"
+                    app:radioLblMaxWith="160dp"
+                    app:radioOpt0="@string/radio_opt_b"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="@string/radio_opt_p"
+                    app:radioOpt3="@string/radio_opt_na" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vSistemaBloqueo"
+                    style="@style/MangueraItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:radioCount="3"
+                    app:radioLbl="@string/mangueras_field_sistema_bloqueo"
+                    app:radioLblMinWith="160dp"
+                    app:radioLblMaxWith="160dp"
+                    app:radioOpt0="@string/radio_opt_b"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="@string/radio_opt_p" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vFugas"
+                    style="@style/MangueraItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:radioCount="3"
+                    app:radioLbl="@string/mangueras_field_fugas"
+                    app:radioLblMinWith="160dp"
+                    app:radioLblMaxWith="160dp"
+                    app:radioOpt0="@string/radio_opt_b"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="@string/radio_opt_p" />
+
+                <com.bilpa.android.widgets.RadioCheckboxWidget
+                    android:id="@+id/vOtros"
+                    style="@style/MangueraItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:radioCount="3"
+                    app:radioLbl="@string/mangueras_field_otros"
+                    app:radioLblMinWith="160dp"
+                    app:radioLblMaxWith="160dp"
+                    app:radioOpt0="@string/radio_opt_b"
+                    app:radioOpt1="@string/radio_opt_c"
+                    app:radioOpt2="@string/radio_opt_p" />
+
+                <TextView
+                    android:id="@+id/vLblMasOpciones"
+                    style="@style/DetailSectionTitle"
+                    android:text="TOTALIZADORES" />
+
+                <View style="@style/DetailSectionSep" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vToalizadoMecanidoInicial"
+                        style="@style/MangueraItem.Left"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        app:lbl="@string/mangueras_field_totalizador_mecanico_inicial" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vToalizadoMecanidoFinal"
+                        style="@style/MangueraItem.Right"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/vToalizadoMecanidoInicial"
+                        app:lbl="@string/mangueras_field_totalizador_mecanico_final" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vTotalizadorElectronicInicial"
+                        style="@style/MangueraItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/vToalizadoMecanidoInicial"
+                        android:layout_alignRight="@+id/vToalizadoMecanidoInicial"
+                        android:layout_below="@+id/vToalizadoMecanidoInicial"
+                        app:lbl="@string/mangueras_field_totalizador_electro_inicial" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vTotalizadorElectronicFinal"
+                        style="@style/MangueraItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/vToalizadoMecanidoFinal"
+                        android:layout_alignStart="@+id/vToalizadoMecanidoFinal"
+                        android:layout_alignRight="@+id/vToalizadoMecanidoFinal"
+                        android:layout_alignLeft="@+id/vToalizadoMecanidoFinal"
+                        android:layout_below="@+id/vToalizadoMecanidoFinal"
+                        app:lbl="@string/mangueras_field_totalizador_electro_final" />
+
+                    <TextView
+                        android:id="@+id/vLblVolumenRetirado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/vToalizadoMecanidoInicial"
+                        android:layout_alignRight="@+id/vToalizadoMecanidoInicial"
+                        android:layout_below="@+id/vTotalizadorElectronicInicial"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/mangueras_field_volumen_retirado"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/vVolumenRetirado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/vLblVolumenRetirado"
+                        android:layout_alignStart="@+id/vTotalizadorElectronicFinal"
+                        android:layout_alignTop="@+id/vLblVolumenRetirado"
+                        android:text="@string/preview_mangueras_num"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/vLblCaudal"
+                    style="@style/DetailSectionTitle"
+                    android:text="@string/mangueras_subtitle_caudal" />
+
+                <View style="@style/DetailSectionSep" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vCaudalVolumen"
+                        style="@style/MangueraItem.Left"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        app:lbl="@string/mangueras_field_volumen" />
+
+                    <RelativeLayout
+                        android:id="@+id/vCaudalTiempo"
+                        style="@style/MangueraItem.Medium"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/vCaudalVolumen"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignTop="@+id/vCaudalVolumen"
+                        android:layout_toRightOf="@+id/vCaudalVolumen">
+
+
+                        <TextView
+                            android:id="@+id/vCronoLbl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@string/roboto_light"
+                            android:text="@string/mangueras_field_tiempo"
+                            android:textAppearance="?android:attr/textAppearance" />
+
+                        <Chronometer
+                            android:id="@+id/vCrono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/vLbl"
+                            android:layout_marginBottom="4dp"
+                            android:layout_toStartOf="@+id/vCronoBtn"
+                            android:fontFamily="@string/roboto_light"
+                            android:gravity="left"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/vCronoBtn"
+                            android:textColor="@color/b_buttonTextColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="54dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/raised_btn"
+                            android:text="@string/btn_init" />
+
+                    </RelativeLayout>
+
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vCaudalLitrosMinuto"
+                        style="@style/MangueraItem.Right"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/vCaudalTiempo"
+                        app:lbl="@string/mangueras_field_volumen_retirado2" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/vLblPrecinto"
+                    style="@style/DetailSectionTitle"
+                    android:text="@string/mangueras_subtitle_calibre_precinto" />
+
+                <View style="@style/DetailSectionSep" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vCalibre1"
+                        style="@style/MangueraItem.Left"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        app:lbl="@string/mangueras_field_calibre1" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vCalibre2"
+                        style="@style/MangueraItem.Medium"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/vCalibre1"
+                        app:lbl="@string/mangueras_field_calibre2" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vCalibre3"
+                        style="@style/MangueraItem.Right"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/vCalibre2"
+                        app:lbl="@string/mangueras_field_calibre3" />
+
+                    <TextView
+                        android:id="@+id/vLblCalibreAlto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vCalibre1"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/mangueras_field_calibre_alto"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/vCalibreAlto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/vLblCalibreAlto"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/vLblCalibreAlto"
+                        android:text="@string/preview_mangueras_num"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vLblCalibreBajo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/vLblCalibreAlto"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/vCalibreAlto"
+                        android:text="@string/mangueras_field_calibre_bajo"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/vCalibreBajo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/vLblCalibreAlto"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/vLblCalibreBajo"
+                        android:text="@string/preview_mangueras_num"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+
+                    <com.bilpa.android.widgets.RadioWidget
+                        android:id="@+id/vPrecintoRemplazado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/vLblCalibreAlto"
+                        app:radioCount="3"
+                        app:radioLbl="@string/mangueras_field_precinto_remplazo"
+                        app:radioLblMinWith="250dp"
+                        app:radioOpt0="@string/radio_opt_si"
+                        app:radioOpt1="@string/radio_opt_no"
+                        app:radioOpt2="@string/radio_opt_na" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vPrecintoNumeroViejo"
+                        style="@style/MangueraItem.Left"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/vPrecintoRemplazado"
+                        app:lbl="@string/mangueras_field_precinto_numero_old" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vPrecintoNumero"
+                        style="@style/MangueraItem.Left"
+                        android:layout_width="@dimen/label_edit_normal"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/vPrecintoNumeroViejo"
+                        android:layout_below="@+id/vPrecintoRemplazado"
+                        app:lbl="@string/mangueras_field_precinto_numero" />
+
+                    <RelativeLayout
+                        android:id="@+id/vPrecintoRemplazoPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vPrecintoNumero">
+
+
+                        <com.bilpa.android.widgets.LblEditText
+                            android:id="@+id/vCalibre4"
+                            style="@style/MangueraItem.Left"
+                            android:layout_width="@dimen/label_edit_normal"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            app:lbl="@string/mangueras_field_calibre4" />
+
+
+                        <com.bilpa.android.widgets.LblEditText
+                            android:id="@+id/vCalibre5"
+                            style="@style/MangueraItem.Medium"
+                            android:layout_width="@dimen/label_edit_normal"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/vCalibre4"
+                            android:layout_toRightOf="@+id/vCalibre4"
+                            app:lbl="@string/mangueras_field_calibre5" />
+
+                        <com.bilpa.android.widgets.LblEditText
+                            android:id="@+id/vCalibre6"
+                            style="@style/MangueraItem.Right"
+                            android:layout_width="@dimen/label_edit_normal"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/vCalibre5"
+                            android:layout_toRightOf="@+id/vCalibre5"
+                            app:lbl="@string/mangueras_field_calibre6" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/vProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+</RelativeLayout>
+
+
+

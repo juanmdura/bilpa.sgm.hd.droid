@@ -1,0 +1,205 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/vFragContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2.5"
+        tools:context=".HomeActivity"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbarEstacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s1x"
+                    android:background="@null"
+                    android:minHeight="@dimen/s1x"
+                    app:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="64dp"
+                    android:paddingRight="64dp">
+
+                    <TextView
+                        android:id="@+id/vEstacionName"
+                        style="@style/FragTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/preview_visita_name" />
+
+                    <TextView
+                        android:id="@+id/vSchedule"
+                        style="@style/EstacionTextLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/roboto_light"
+                        android:text="@string/preview_visita_planificacion"
+                        android:textColor="@color/b_textColorSecondary"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/vInitLbl"
+                        style="@style/EstacionTextLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:text="@string/visita_lbl_init" />
+
+                    <TextView
+                        android:id="@+id/vInit"
+                        style="@style/EstacionTextValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="16dp"
+                        android:drawableRight="@drawable/ic_edit_black_24dp"
+                        android:text="@string/preview_date"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/vEndLbl"
+                        style="@style/EstacionTextLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/visita_lbl_end" />
+
+                    <TextView
+                        android:id="@+id/vEnd"
+                        style="@style/EstacionTextValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="16dp"
+                        android:drawableRight="@drawable/ic_edit_black_24dp"
+                        android:text="@string/preview_date"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    <TextView
+                        android:id="@+id/vSignLbl"
+                        style="@style/EstacionTextLbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/visita_lbl_sign" />
+
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="8dp">
+
+
+                        <ImageView
+                            android:id="@+id/vSignPreview"
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:background="@drawable/sign_border_box_preview"
+                            android:src="#ffffff"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/panel_1_holo_light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/home_row_even"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/s1x"
+                    android:minHeight="@dimen/s1x">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/vToolbarActivos"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/s1x"
+                        android:background="@null"
+                        android:minHeight="@dimen/s1x"
+                        app:theme="@style/ThemeOverlay.AppCompat.Light" >
+
+                        <TextView
+                            android:id="@+id/vLblActivos"
+                            style="@style/FragTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="64dp"
+                            android:layout_marginRight="64dp"
+                            android:text="@string/visita_activos_title" />
+
+                    </android.support.v7.widget.Toolbar>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/separator" />
+
+
+
+                </RelativeLayout>
+
+
+                <ListView
+                    android:id="@+id/vListActivos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/row_activos_list" />
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/vProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+
+</FrameLayout>
+
+
+

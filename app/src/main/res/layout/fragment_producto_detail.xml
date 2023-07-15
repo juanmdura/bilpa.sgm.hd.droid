@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/two_panel_bg">
+
+    <LinearLayout
+        android:id="@+id/vData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s1x"
+            android:background="@null"
+            android:minHeight="@dimen/s1x"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.bilpa.android.widgets.RadioCheckboxWidget
+                android:id="@+id/vMonitorBombeo"
+                style="@style/ActivoChekeoItem.Odd"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                app:radioCount="3"
+                app:radioLbl="Monitor unidad bombeo"
+                app:radioLblMaxWith="160dp"
+                app:radioLblMinWith="160dp"
+                app:radioOpt0="B"
+                app:radioOpt1="@string/radio_opt_c"
+                app:radioOpt2="P" />
+
+            <com.bilpa.android.widgets.RadioCheckboxWidget
+                android:id="@+id/vEliminadorAireGases"
+                style="@style/ActivoChekeoItem.Even"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                app:radioCount="3"
+                app:radioLbl="Eliminador de aire y gases"
+                app:radioLblMaxWith="160dp"
+                app:radioLblMinWith="160dp"
+                app:radioOpt0="B"
+                app:radioOpt1="@string/radio_opt_c"
+                app:radioOpt2="P" />
+
+            <com.bilpa.android.widgets.RadioCheckboxWidget
+                android:id="@+id/vCorreasPoleas"
+                style="@style/ActivoChekeoItem.Odd"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                app:radioCount="4"
+                app:radioLbl="Correas / Poleas"
+                app:radioLblMaxWith="160dp"
+                app:radioLblMinWith="160dp"
+                app:radioOpt0="B"
+                app:radioOpt1="@string/radio_opt_c"
+                app:radioOpt2="P"
+                app:radioOpt3="N/A" />
+
+            <com.bilpa.android.widgets.RadioCheckboxWidget
+                android:id="@+id/vOtros"
+                style="@style/ActivoChekeoItem.Even"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                app:radioCount="3"
+                app:radioLbl="Otros"
+                app:radioLblMaxWith="160dp"
+                app:radioLblMinWith="160dp"
+                app:radioOpt0="B"
+                app:radioOpt1="@string/radio_opt_c"
+                app:radioOpt2="P" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/vProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
+
+
+

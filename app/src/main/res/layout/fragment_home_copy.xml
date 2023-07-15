@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/vListEstacionesHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_row_size"
+        layout="@layout/row_estaciones_list_header" />
+
+    <ListView
+        android:layout_width="match_parent"
+        tools:listitem="@layout/row_estaciones_list"
+        android:layout_height="wrap_content"
+        android:id="@+id/vListEstaciones" />
+
+</LinearLayout>
+
+
+

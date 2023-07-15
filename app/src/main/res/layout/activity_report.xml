@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEDEDE"
+    tools:context="com.bilpa.android.HomeActivity"
+    tools:ignore="MergeRootFrame">
+
+    <RelativeLayout
+        android:id="@+id/toolbarPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s4x"
+        android:background="@color/b_actionBarBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s1x">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s1x"
+                android:layout_toLeftOf="@+id/vUserPanel"
+                android:minHeight="?android:attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/AppTheme.ThemeOverlay">
+
+                <ImageView
+                    android:id="@+id/vToolbarLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/actionbar_logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vToolbarTitle"
+                        style="@style/FragTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:minWidth="300dp"
+                        android:text="@string/report_ab_title"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vToolbarDesc"
+                        style="@style/FragTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="-4dp"
+                        android:layout_marginLeft="16dp"
+                        android:minWidth="300dp"
+                        android:text="@string/preview_estacion_name"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/vUserPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vRol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/preview_user_rol"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#e1e1e1" />
+
+                <TextView
+                    android:id="@+id/vUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/roboto_regular"
+                    android:text="@string/preview_user_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:translationY="-5dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/s1x"
+        android:layout_marginRight="@dimen/s1x"
+        android:layout_marginTop="@dimen/s2x"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/fragment_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</RelativeLayout>

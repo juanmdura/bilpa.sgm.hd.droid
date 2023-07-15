@@ -1,0 +1,244 @@
+Bilpa - Release Notes
+
+Version 1.4.4 (54) - 27/11/2017
+==================================
+- [Chequeos] Se agrega comentario visible por default en true
+
+Version 1.4.4 (54) - 14/03/2017
+==================================
+- [Chequeos] Se cambia constante chequeos genericos a 6
+
+Version 1.4.3 (53) - 14/03/2017
+==================================
+- [Fallas] En corregidos, se arregla el boton de back
+- [Chequeos] Se modifica alineacion de c/chequeo
+
+
+Version 1.2.7 (47) - 03/02/2016
+==================================
+- [Repuestos] Se soluciona bug al filtrar cuando aun no han cargado los repuestos.
+- [Preventivos] Al ver una visita en ocasiones se producia un fallo.
+
+
+Version 1.2.7 (47) - 03/02/2016
+==================================
+- [Correctivos] Se actualizan en el server las fechas inicio y fin al seleccionarlas
+- [Preventivos] Lista del home mostraba elementos repetidos
+- [Pendientes] Bug realcionado a la acutalizacion de pendientes.
+
+
+Version 1.2.6 (46) - 28/01/2016
+==================================
+- Se agregan fechas de inicio y fin al proceso de los correctivos
+
+
+
+Version 1.2.5 (45) - 22/12/2015
+==================================
+- Se soluciona problema con los zeros en los totalizadores y calibres de las mangueras.
+- Se arregla diasSinVisita en los preventivos
+
+
+Version 1.2.4 (44) - 16/12/2015
+==================================
+- Se soluciona null pointer en los pendientes
+
+
+Version 1.2.3 (43) - 16/12/2015
+==================================
+- Se soluciona problema con el locale del tablets y los totalizadores
+
+
+Version 1.2.2 (42) - 15/12/2015
+==================================
+- Se soluciona el visible del comentarios en las reparaciones.
+- Actualiaciones de los calibres.
+- Otros fixes
+
+
+Version 1.2.1 (41) - 08/12/2015
+==================================
+- Detalle del correctivo - Cumplimiento se muestra bien si el valor viene.
+
+
+Version 1.2.0 (40) - 08/12/2015
+==================================
+- Detalle del correctivo - Se corrigen problemas al cambiar el activo de una falla
+- En las estaciones (correctivos) se muestran imagenes desde el server.
+- Otros bug fixes
+
+
+Version 1.2 (39) - 08/12/2015
+==================================
+- Soporte a correctivos
+
+
+Version 1.2 (33) - 19/10/2015
+==================================
+- Se corrigen la perdidad de datos en el detalle del pico
+- Se cambia numero de version
+- Fila otros en blanco para los chequeo de productos
+
+Version 1.2.2 (32) - 01/10/2015
+==================================
+- Se cambian "Corregidos" por "Reparaciones"
+- Se arreglan bugs al no guardar chequeos e n productos y mangueras.
+- Se agrega la opcion otros en los chequeos.
+- Se arreglan los destinatarios en pendientes.
+
+
+Version 1.2.1 (31) - 29/09/2015
+==================================
+- Se corrigen bugs relacionados al chequeo
+- Se actualizan activos para actualizar el estado
+- Se corrige titulos en el dialogo de firma
+- Otros issues
+
+Version 1.2.0 (30) - 24/09/2015
+==================================
+- Finaliazcion de la visita - Se cambia el flujo
+- Se agrega ingreso de emails en finalizacion de la visita
+- Asociar chequeos a pendientes y corregidos
+- Destinatarios de pendientes
+- Visita: Se agrega un label de color que indica el status del activo
+
+Version 1.1.3 (29) - 03/07/2015
+==================================
+- [Reporte] Se ponenen en negritas otros campos.
+- [Reporte Emial] Se cambia preventiva por preventivo
+- [Reporte Emial] No se adjunta la firma
+
+Version 1.1.2 (28) - 30/06/2015
+==================================
+- [Mangueras] Se corrige problema con los formatos de los doubles.
+
+
+Version 1.1.1 (27) - 29/06/2015
+==================================
+- [Pendientes] Se arreglan problemas en el listado con plazos vacios.
+
+Version 1.1.0 (26) - 29/06/2015
+==================================
+- [Pdf] Se agrega la firma y comentario del operador al pdf.
+- [Pdf] Se achica el logo y se pasa el titlulo a nivel del logo
+- [Pdf-Email] Se cambian texto del subject y del body.
+- [Pdf-Preview] Se cambia formato del titulo.
+- [Report] Se ponen en negrita algunos valores del reporte.
+
+
+Version 1.0.3 (25) - 26/06/2015
+==================================
+- Bug relacionado con el plazo de los pendientes.
+- Bug al ver el reporte sin tener instalado un pdf viewer en el dispositivo.
+- Bug chequeo tanque cuando no se ingresa medida del agua. Default 0.
+- Chequeo Mangueras - Litros por minutos accepta floats
+
+
+Version 1.0.2 (24) - 23/06/2015
+==================================
+- Se cambia ip.
+- Actualizacion de librerias y aspectos visuales.
+
+
+Version 1.0.1 (23) - 15/05/2015
+==================================
+- Se configuran tipos de builds
+- [615] Chequeo Manguera | Numero viejo
+- [614] Corregidos | Tanques | No mostrar boton Leer QR
+
+Version 1.0.0 (22) - 14/05/2015
+==================================
+- Se arreglan algunos strings.
+
+
+Version 0.5.1 (21) - 14/05/2015
+==================================
+- [612] Corregido | Lectura con QR | Cambiar texto de mensaje de error
+- [613] Genearal | Listas | Estilo en las rows
+- [611] Chequeo Producto | Nuevo Campo P
+- [610] Corregidos | Dialogo de mangueras | Button Back no esconde el dialogo
+- [609] Chequeo Manguera | Dirty | Totalizador Electronico Final
+- [608] Chequeo Producto y Manguera | Listas | Elemento seleccionado
+- [607] Corregido | Spinner Mangueras | Desaparece al editar
+
+
+Version 0.5.0 (20) - 13/05/2015
+==================================
+
+- [600] Nuevo RQ | Chequeo Surtidor | Mover campo Plan Sellado
+- [603] Nuevo RQ | Corregido | Manguera | Seleccion con QR
+- [602] Nuevo RQ | Chequeo Manguera | Precinto | Nuevo campo para el numero viejo
+- [601] Nuevo RQ | Nuevo valor para todos los chequeos
+- [604] Nuevo RQ | Corregido | Fotos | Agregar segunda foto
+
+Version 0.4.6 (19) - 12/05/2015
+==================================
+
+- [605] Chequeo Producto | Lista | Productos repetidos
+- [606] Chequeo Manguera | Lista | Seleccion de items
+
+
+Version 0.4.5 (18) - 11/05/2015
+==================================
+
+- [599] Lista de Mangueras muestra texto "Lbl"
+- [598] Mangueras - Guardado de decimales. Queda pendiente el round del lado del server
+- [597] QR | Activos y Mangueras | Error al leer un QR asignado a un activo o manguera
+- [596] Chequeo | Manguera y Producto | List - Marcar seleccionado
+- [595] Login - Arreglos en el diseño
+
+
+Version 0.4.4 (17) - 04/05/2015
+==================================
+
+- Se cambia el splash
+
+
+
+Version 0.4.3 (16) - 30/05/2015
+==================================
+
+- Bugs relacionados a el ingreso de decimales en la edicion de mangueras.
+- Mangueras Detail - Se corrigen el label del totalizador elect inicial
+- [586] Reporte - Formato en el nombre del archivo
+- [586] Reporte - Formato en el subject del email
+- [586] Reporte - Se mandan como adjuntos en el email el reporte y la firma
+- [583] Mangueras - Se agranda el boton del cronometro
+- [591] Corregidos y Pendientes | Dialogo "Cargando..." se esconde con un touch
+- [588] Visita | Lista de activos - Se saca el id del activo
+- [589] Lista EE.SS | Action Bar | Botones Actualizar y Salir al volver
+- [592]	Lista EE.SS y Visita | Crash
+
+Version 0.4.0 (14) - 29/04/2015
+==================================
+
+- [580] QR Magueras - Error al leer un codigo QR que ya esta asociado una manguera
+- [582] Reporte - Se usa una font custom
+- [582] Reporte - Se corrigen detalles de alineacion
+- [582] Reporte - Se corrigen caracteres especiales
+- [581] Visita - Salir sin guardar solo cuando hay cambios
+- [577] Mangueras - Se agrega el label codigo qr
+
+Version 0.3.6 (13) - 23/04/2015
+==================================
+
+- [576] QR Button funciona mal
+- [580] Magueras | Error al leer un codigo QR que ya esta asociado una manguera
+- [575] Visita | QR Actualizar screen al asociar qr
+- [568] Chequeo | Manguera | Mensaje de error al no llenar los calibre 4, 5 y 6.
+- [552] Crear reporte visita
+- [553] Enviar reporte por mail
+
+
+Version 0.3.5 (12) - 14/04/2015
+==================================
+
+- [551] Separador action bar en los suritdores y bombas
+- [550] Home - Se coloca el nombre de usuario y rol a la derecha
+- [560] Mangueras - Se cambian strings
+- [570] Dialogos - Se arregla el boton de back
+- [571] Cambio en textos en la pantalla de visita
+- [573] Cambio en el msg cuando no hay productos en un surtidor
+- [573] Cambio en el msg cuando no hay productos en un surtidor
+- [572] Se cambia el nombre de la app
+- [558] Seleccion / Asignacion de qr en los picos

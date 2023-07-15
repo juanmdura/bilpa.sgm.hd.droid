@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/vSectionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/preview_section_title"
+        android:fontFamily="@string/roboto_medium"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableLayout
+        android:layout_marginTop="24dp"
+        android:id="@+id/vSectionTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/one_pixel_border_black"
+        android:padding="1px">
+
+        <!--<include layout="@layout/report_section_row" />-->
+        <!--<include layout="@layout/report_section_row" />-->
+        <!--<include layout="@layout/report_section_row" />-->
+
+    </TableLayout>
+
+
+</LinearLayout>
+
+
+

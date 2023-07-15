@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".HomeActivity">
+
+
+        <include
+            android:id="@+id/vListEstacionesHeader"
+            layout="@layout/row_estaciones_list_header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/home_row_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/vListEstaciones"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/row_estaciones_list" />
+
+            <ProgressBar
+                android:id="@+id/vProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/vEmptyView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@string/roboto_light"
+                android:text="@string/home_msg_visitas_asignadas_empty"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
+
+
+

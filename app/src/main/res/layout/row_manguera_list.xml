@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/activatedBackgroundIndicator">
+
+    <RelativeLayout
+        android:id="@+id/vSubPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/home_row_size"
+        android:paddingBottom="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/vIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@string/roboto_thin"
+            android:text="@string/preview_index"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@drawable/textcolor_primary_to_white"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/vTypeLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="32dp"
+            android:layout_toEndOf="@+id/vIndex"
+            android:layout_toRightOf="@+id/vIndex"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/mangueras_list_tipo_combustible"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@drawable/textcolor_secondary_to_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/vType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/vTypeLbl"
+            android:layout_alignLeft="@+id/vTypeLbl"
+            android:layout_below="@+id/vTypeLbl"
+            android:fontFamily="@string/roboto_regular"
+            android:text="@string/preview_pico_type"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@drawable/textcolor_primary_to_white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vNumberLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/vTypeLbl"
+            android:layout_below="@+id/vType"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/mangueras_list_lbl_number"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@drawable/textcolor_primary_to_white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/vNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/vNumberLbl"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/vNumberLbl"
+            android:layout_toRightOf="@+id/vNumberLbl"
+            android:fontFamily="@string/roboto_regular"
+            android:text="@string/preview_mangueras_num"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/textcolor_primary_to_white"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/vQrCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/vTypeLbl"
+            android:layout_alignLeft="@+id/vTypeLbl"
+            android:layout_below="@+id/vNumberLbl"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/visita_activos_code"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@drawable/textcolor_primary_to_white" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

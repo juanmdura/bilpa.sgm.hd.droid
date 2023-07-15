@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bilpa.android.HomeActivity">
+
+    <item
+        android:id="@+id/vShowReport"
+        android:icon="@drawable/ic_insert_drive_file_white_24dp"
+        android:title="@string/menu_show_pdf"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/vEmail"
+        android:icon="@drawable/ic_email_white_24dp"
+        android:title="@string/menu_send_email"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

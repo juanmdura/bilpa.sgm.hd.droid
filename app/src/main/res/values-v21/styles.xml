@@ -1,0 +1,43 @@
+<resources>
+
+
+    <style name="BilpaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/bilpa_blue</item>
+        <item name="colorPrimaryDark">@color/bilpa_blue_highLighted</item>
+        <item name="colorAccent">@color/bilpa_blue</item>
+        <item name="android:windowBackground">@color/b_windownBackground</item>
+        <item name="android:buttonStyle">@style/RaisedBtn</item>
+        <item name="colorButtonNormal">@color/b_widgetColorAccent</item>
+    </style>
+
+    <style name="BilpaTheme.Inverse" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/bilpa_red</item>
+        <item name="colorPrimaryDark">@color/bilpa_red_highLighted</item>
+        <item name="colorAccent">@color/bilpa_red</item>
+        <item name="android:windowBackground">@color/b_windownBackground</item>
+        <item name="android:buttonStyle">@style/RaisedBtn</item>
+        <item name="colorButtonNormal">?colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:textColorPrimary">@color/b_textColorPrimary</item>
+
+        <item name="android:colorAccent">@color/b_widgetColorAccent</item>
+        <item name="colorAccent">@color/b_widgetColorAccent</item>
+
+        <item name="colorButtonNormal">@color/b_widgetColorAccent</item>
+        <item name="buttonStyle">@style/RaisedBtn</item>
+
+        <item name="android:dialogTheme">@style/AppTheme.Dialog</item>
+
+        <item name="android:windowBackground">@color/b_windownBackground</item>
+
+    </style>
+
+    <style name="RaisedBtn" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textColor">@color/b_buttonTextColor</item>
+    </style>
+
+</resources>

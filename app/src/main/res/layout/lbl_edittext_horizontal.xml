@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/vLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/preview_lbl"
+            android:textAppearance="?android:attr/textAppearance" />
+
+        <com.bilpa.android.widgets.ActionEditText
+            android:id="@+id/vValue"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/vLbl"
+            android:layout_toRightOf="@+id/vLbl"
+            android:ems="10"
+            android:hint="@string/preview_hint"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

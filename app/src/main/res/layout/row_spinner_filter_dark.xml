@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="24dp"
+    android:fontFamily="@string/roboto_condensed"
+    android:gravity="left|center_vertical"
+    android:text="@string/preview_lbl"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:background="@null"
+    android:textAppearance="?android:attr/textAppearance"
+    android:textColor="@color/black" />
+
+
+

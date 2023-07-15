@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item>-->
+        <!--&lt;!&ndash; Support library compatibility &ndash;&gt;-->
+        <!--<item name="actionBarStyle">@style/MyActionBar</item>-->
+
+        <!--<item name="colorPrimary">@color/ab_backgroud</item>-->
+        <!--<item name="colorPrimaryDark">@color/ab_backgroud</item>-->
+        <!--&lt;!&ndash;<item name="android:textColorPrimary">@color/ab_textColorPrimary</item>&ndash;&gt;-->
+
+        <!--<item name="android:windowBackground">@drawable/app_bg</item>-->
+
+
+    <!--</style>-->
+
+    <!-- ActionBar styles -->
+    <!--<style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">-->
+        <!--<item name="android:background">@drawable/app_bg</item>-->
+        <!--<item name="background">@drawable/app_bg</item>-->
+    <!--</style>-->
+
+
+</resources>

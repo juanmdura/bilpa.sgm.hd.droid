@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bilpa.android.HomeActivity">
+
+    <item
+        android:id="@+id/vInit"
+        android:title="@string/menu_iniciar_visita"
+        android:icon="@drawable/ic_content_paste_black_24dp"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/home_row_size">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:paddingTop="16dp">
+
+
+        <TextView
+            android:id="@+id/vActivoName"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@string/roboto_light"
+            android:gravity="left"
+            android:text="@string/preview_activo_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/vActivoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vActivoName"
+            android:layout_below="@+id/vActivoName"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/preview_activo_type"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/vActionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vActivoType"
+            android:layout_below="@+id/vActivoType"
+            android:text="SIN_INICIAR"
+            style="@style/StatusLabel"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/vActivoQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vActionStatus"
+            android:layout_below="@+id/vActionStatus"
+            android:fontFamily="@string/roboto_light"
+            android:text="@string/visita_activos_code"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/vIcoPendiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vActivoQR"
+            android:layout_below="@+id/vActivoQR"
+            android:src="@drawable/ic_assignment_black_24dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/vFallaReportadaLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/vActivoName"
+            android:fontFamily="@string/roboto_condensed"
+            android:gravity="left"
+            android:text="@string/correctivo_detail_lbl_falla_reportada"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/vFallaReportada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/vFallaReportadaLbl"
+            android:layout_below="@+id/vFallaReportadaLbl"
+            android:layout_toLeftOf="@+id/vActivoName"
+            android:fontFamily="@string/roboto_light"
+            android:gravity="left"
+            android:text="Control volumetrico mayor a 50"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/vComentarioLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/vFallaReportadaLbl"
+            android:layout_below="@+id/vFallaReportada"
+            android:fontFamily="@string/roboto_condensed"
+            android:gravity="left"
+            android:text="@string/correctivo_detail_lbl_comentario"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/vComentario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/vFallaReportadaLbl"
+            android:layout_below="@+id/vComentarioLbl"
+            android:fontFamily="@string/roboto_light"
+            android:gravity="left"
+            android:text="ademas del calibre, tiene un teclado que no anda (de mañana)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:id="@+id/vBtnChangeActivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/vActivoName"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/raised_btn"
+            android:drawableLeft="@drawable/ic_qrcode_24dp"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:fontFamily="@string/roboto_medium"
+            android:minHeight="48dp"
+            android:text="@string/btn_corregir_activo"
+            android:textColor="@color/b_buttonTextColor"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

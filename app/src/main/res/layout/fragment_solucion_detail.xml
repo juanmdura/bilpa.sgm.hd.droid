@@ -1,0 +1,604 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/two_panel_bg"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s1x"
+        android:background="@null"
+        android:minHeight="@dimen/s1x"
+        app:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <com.bilpa.android.widgets.LblTextView
+                android:id="@+id/vFalla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_field"
+                app:hint="@string/corregidos_detail_falla_hint"
+                app:lbl="@string/corregidos_detail_lbl_falla"
+                app:lblMinWith="100dp"
+                app:orientation="0"
+                app:value="" />
+
+
+            <com.bilpa.android.widgets.LblTextView
+                android:id="@+id/vTarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/bg_field"
+                app:hint="@string/corregidos_detail_tarea_hint"
+                app:lbl="@string/corregidos_detail_lbl_tarea"
+                app:lblMinWith="100dp"
+                app:orientation="0"
+                app:value="" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.bilpa.android.widgets.LblEditTextHorizontal
+                    android:id="@+id/vComentario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/vCommentVisible"
+                    android:background="@color/bg_field"
+                    app:hint="@string/corregidos_detail_lbl_enter_comment"
+                    app:lbl="@string/corregidos_detail_lbl_comment"
+                    app:lblMinWith="100dp"
+                    app:minLines="3" />
+
+                <CheckBox
+                    android:id="@+id/vCommentVisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toLeftOf="@+id/vDeleteRepuesto"
+                    android:checked="true"
+                    android:text="@string/corregidos_detail_lbl_comment_visible" />
+
+
+            </RelativeLayout>
+
+
+            <com.bilpa.android.widgets.LblTextView
+                android:id="@+id/vDetinoCargo"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/bg_field"
+                app:hint="@string/corregidos_detail_destino_cargo_hint"
+                app:lbl="@string/corregidos_detail_destino_cargo_lbl"
+                app:lblMinWith="100dp"
+                app:orientation="0"
+                app:value="" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/vPhotoPanel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_field"
+                    android:padding="8dp">
+
+
+                    <TextView
+                        android:id="@+id/vLblPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@string/roboto_light"
+                        android:text="@string/corregidos_detail_lbl_enter_photo_before"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/vPhotoBorder"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/vLblPhoto"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/photo_border_box"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:id="@+id/vPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@null" />
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/vBtnCaputrePhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/vBtnPickPhoto"
+                        android:layout_alignTop="@+id/vPhotoBorder"
+                        android:background="@drawable/raised_btn"
+                        android:drawableLeft="@drawable/ic_camera_alt_white_24dp"
+                        android:drawablePadding="8dp"
+                        android:minWidth="130dp"
+                        android:text="@string/btn_camera"
+                        android:textColor="@color/b_buttonTextColor" />
+
+                    <Button
+                        android:id="@+id/vBtnPickPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vBtnCaputrePhoto"
+                        android:layout_toRightOf="@+id/vPhotoBorder"
+                        android:background="@drawable/raised_btn"
+                        android:drawableLeft="@drawable/ic_perm_media_white_24dp"
+                        android:drawablePadding="8dp"
+                        android:minWidth="130dp"
+                        android:text="@string/btn_gallery"
+                        android:textColor="@color/b_buttonTextColor" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/vPhotoPanel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/bg_field"
+                    android:padding="8dp">
+
+
+                    <TextView
+                        android:id="@+id/vLblPhoto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@string/roboto_light"
+                        android:text="@string/corregidos_detail_lbl_enter_photo_after"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/vPhotoBorder2"
+                        android:layout_width="180dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@+id/vLblPhoto2"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/photo_border_box"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:id="@+id/vPhoto2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@null" />
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/vBtnCaputrePhoto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/vBtnPickPhoto2"
+                        android:layout_alignTop="@+id/vPhotoBorder2"
+                        android:background="@drawable/raised_btn"
+                        android:drawableLeft="@drawable/ic_camera_alt_white_24dp"
+                        android:drawablePadding="8dp"
+                        android:minWidth="130dp"
+                        android:text="@string/btn_camera"
+                        android:textColor="@color/b_buttonTextColor" />
+
+                    <Button
+                        android:id="@+id/vBtnPickPhoto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vBtnCaputrePhoto2"
+                        android:layout_toRightOf="@+id/vPhotoBorder2"
+                        android:background="@drawable/raised_btn"
+                        android:drawableLeft="@drawable/ic_perm_media_white_24dp"
+                        android:drawablePadding="8dp"
+                        android:minWidth="130dp"
+                        android:text="@string/btn_gallery"
+                        android:textColor="@color/b_buttonTextColor" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/vMangueraPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/vLblMasOpciones"
+                    style="@style/DetailSectionTitle"
+                    android:text="MANGUERA" />
+
+                <View style="@style/DetailSectionSep" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.bilpa.android.widgets.LblTextView
+                        android:id="@+id/vManguera"
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/bg_field"
+                        app:hint="@string/corregidos_detail_manguera_hint"
+                        app:lbl="@string/corregidos_detail_manguera_lbl"
+                        app:lblMinWith="100dp"
+                        app:orientation="0"
+                        app:value="" />
+
+
+                    <Button
+                        android:id="@+id/vBtnManguerasQR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/vPhotoBorder"
+                        android:background="@drawable/raised_btn"
+                        android:drawableLeft="@drawable/ic_qrcode_24dp"
+                        android:drawablePadding="8dp"
+                        android:minWidth="130dp"
+                        android:text="@string/btn_read_qr"
+                        android:textColor="@color/b_buttonTextColor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vTotalizdoresPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vTotalizadorElectronicInicial"
+                        style="@style/MangueraItem"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/vToalizadoMecanidoInicial"
+                        app:lbl="@string/mangueras_field_totalizador_electro_inicial" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vTotalizadorElectronicFinal"
+                        style="@style/MangueraItem"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/vToalizadoMecanidoFinal"
+                        android:layout_marginLeft="8dp"
+                        app:lbl="@string/mangueras_field_totalizador_electro_final" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/vLblVolumenRetirado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="32dp"
+                        android:text="@string/mangueras_field_volumen_retirado"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/vVolumenRetirado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/preview_mangueras_num"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vLblPrecinto"
+                    style="@style/DetailSectionTitle"
+                    android:text="@string/mangueras_subtitle_calibre_precinto" />
+
+                <View style="@style/DetailSectionSep" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vCalibre1"
+                        style="@style/MangueraItem.Left"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        app:lbl="@string/mangueras_field_calibre1" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vCalibre2"
+                        style="@style/MangueraItem.Medium"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/vCalibre1"
+                        app:lbl="@string/mangueras_field_calibre2" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vCalibre3"
+                        style="@style/MangueraItem.Right"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/vCalibre2"
+                        app:lbl="@string/mangueras_field_calibre3" />
+
+                    <TextView
+                        android:id="@+id/vLblCalibreAlto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vCalibre1"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/mangueras_field_calibre_alto"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/vCalibreAlto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/vLblCalibreAlto"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/vLblCalibreAlto"
+                        android:text="@string/preview_mangueras_num"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vLblCalibreBajo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/vLblCalibreAlto"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/vCalibreAlto"
+                        android:text="@string/mangueras_field_calibre_bajo"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/vCalibreBajo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/vLblCalibreAlto"
+                        android:layout_marginTop="16dp"
+                        android:layout_toRightOf="@+id/vLblCalibreBajo"
+                        android:text="@string/preview_mangueras_num"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+
+
+                    <com.bilpa.android.widgets.RadioWidget
+                        android:id="@+id/vPrecintoRemplazado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/vLblCalibreAlto"
+                        app:radioCount="3"
+                        app:radioLbl="@string/mangueras_field_precinto_remplazo"
+                        app:radioLblMinWith="250dp"
+                        app:radioOpt0="@string/radio_opt_si"
+                        app:radioOpt1="@string/radio_opt_no"
+                        app:radioOpt2="@string/radio_opt_na" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vPrecintoNumeroViejo"
+                        style="@style/MangueraItem.Left"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/vPrecintoRemplazado"
+                        app:lbl="@string/mangueras_field_precinto_numero_old" />
+
+                    <com.bilpa.android.widgets.LblEditText
+                        android:id="@+id/vPrecintoNumero"
+                        style="@style/MangueraItem.Left"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vPrecintoRemplazado"
+                        android:layout_toRightOf="@+id/vPrecintoNumeroViejo"
+                        app:lbl="@string/mangueras_field_precinto_numero" />
+
+                    <RelativeLayout
+                        android:id="@+id/vPrecintoRemplazoPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vPrecintoNumero">
+
+
+                        <com.bilpa.android.widgets.LblEditText
+                            android:id="@+id/vCalibre4"
+                            style="@style/MangueraItem.Left"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            app:lbl="@string/mangueras_field_calibre4" />
+
+
+                        <com.bilpa.android.widgets.LblEditText
+                            android:id="@+id/vCalibre5"
+                            style="@style/MangueraItem.Medium"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/vCalibre4"
+                            android:layout_toRightOf="@+id/vCalibre4"
+                            app:lbl="@string/mangueras_field_calibre5" />
+
+                        <com.bilpa.android.widgets.LblEditText
+                            android:id="@+id/vCalibre6"
+                            style="@style/MangueraItem.Right"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/vCalibre5"
+                            android:layout_toRightOf="@+id/vCalibre5"
+                            app:lbl="@string/mangueras_field_calibre6" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/vLblRepuestos"
+                    style="@style/DetailSectionTitle"
+                    android:text="@string/corregidos_detail_repuestos_title" />
+
+
+                <View
+                    android:id="@+id/vLblRepuestosSep"
+                    style="@style/DetailSectionSep"
+                    android:layout_below="@+id/vLblRepuestos" />
+
+
+                <LinearLayout
+                    android:id="@+id/vPanelRespuestos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vLblRepuestosSep"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/vEmptyRespuestos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/roboto_thin"
+                        android:text="@string/corregidos_detail_repuestos_empty_msg"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <include
+                        layout="@layout/row_repuesto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp" />
+
+                    <include
+                        layout="@layout/row_repuesto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp" />
+
+                    <include
+                        layout="@layout/row_repuesto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp" />
+
+                    <include
+                        layout="@layout/row_repuesto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/vAddRespuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/raised_btn"
+                android:text="@string/btn_agregar"
+                android:textColor="@color/b_buttonTextColor" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
